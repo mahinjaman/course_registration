@@ -1,0 +1,74 @@
+[
+  {
+    "course_name": "The Complete Web Developer Course",
+    "course_code": "WEBDEV101",
+    "image": "https://i.ibb.co/zGrFM14/Web-Development-Course-Thumbnail.jpg",
+    "credit": 1,
+    "price": 15000,
+    "course_details": "This comprehensive course covers HTML, CSS, JavaScript, Node.js, and more. It includes hands-on projects and assignments to reinforce learning."
+  },
+  {
+    "course_name": "Responsive Web Design Fundamentals",
+    "course_code": "RESPWEB201",
+    "image": "https://i.ibb.co/XFgRx52/pngtree-desktop-3d-rendering-devices-featuring-responsive-web-design-image-3789963.jpg",
+    "credit": 2,
+    "price": 25000,
+    "course_details": "Learn the principles of responsive web design, including flexible grids, media queries, and responsive images, to create websites that adapt to various screen sizes."
+  },
+  {
+    "course_name": "JavaScript for Beginners",
+    "course_code": "JSBEGIN301",
+    "image": "https://i.ibb.co/vmRNf8P/original.webp",
+    "credit": 10,
+    "price": 1000,
+    "course_details": "This beginner-friendly course teaches the basics of JavaScript programming, including variables, loops, functions, and DOM manipulation."
+  },
+  {
+    "course_name": "Advanced CSS Techniques",
+    "course_code": "CSSADV401",
+    "image": "https://i.ibb.co/L07kP66/1-s9-Xj02-Bar-F5qd-JSASYZS3-Q.png",
+    "credit": 5,
+    "price": 35000,
+    "course_details": "Dive deeper into CSS with advanced topics such as flexbox, grid layout, animations, and CSS preprocessors like Sass."
+  },
+  {
+    "course_name": "Full Stack Web Development Bootcamp",
+    "course_code": "FULLSTACK501",
+    "image": "https://i.ibb.co/nPPMzxQ/Teachable-Thumbnails-1.png",
+    "credit": 5,
+    "price": 19000,
+    "course_details": "This intensive bootcamp covers both front-end and back-end web development, including HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB."
+  },
+  {
+    "course_name": "React.js Fundamentals",
+    "course_code": "REACTFUND601",
+    "image": "https://i.ibb.co/K5RM6yS/React-Fundamentals-56e32fd939.png",
+    "credit": 2,
+    "price": 23000,
+    "course_details": "Learn React.js, a popular JavaScript library for building user interfaces. Topics include components, props, state management, and hooks."
+  },
+  {
+    "course_name": "Build Responsive Websites with Bootstrap",
+    "course_code": "BOOTSTRAP701",
+    "image": "https://i.ibb.co/XWQ9jn6/Frame-5-2-1-1.png",
+    "credit": 5,
+    "price": 35000,
+    "course_details": "Explore Bootstrap, a front-end framework for building responsive and mobile-first websites. Covers grid system, components, and customization."
+  },
+  {
+    "course_name": "Angular: The Complete Guide",
+    "course_code": "ANGULAR801",
+    "image": "https://i.ibb.co/2ZgFsX1/angular.png",
+    "credit": 5,
+    "price": 19000,
+    "course_details": "Master Angular, a powerful JavaScript framework for building single-page applications. Covers components, services, routing, and forms."
+  },
+  {
+    "course_name": "Python for Web Development",
+    "course_code": "PYTHONWEB901",
+    "image": "https://i.ibb.co/jgrJvLF/Why-to-Use-Python-for-Web-Development.jpg",
+    "credit": 2,
+    "price": 23000,
+    "course_details": "Learn how to use Python for web development, including frameworks like Django and Flask. Covers server-side scripting, database integration, and more."
+  }
+]
