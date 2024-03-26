@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 const Selected = ({course, remainingCredit, totalCredit, totalPrice}) => {
     return (
-        <div className="w-1/4 bg-white rounded-md p-4">
+        <div className="lg:w-1/4 md:w-11/12 mx-auto md:my-5 bg-white rounded-md p-4">
             <div className='border-b-2 py-4'>
                 <h1 className='font-semibold text-blue-500 text-2xl'>Credit Hour Remaining <span id="remainingHour">{remainingCredit}</span> hr</h1>
             </div>
