@@ -5,31 +5,40 @@ import Selected from './components/Selected/Selected'
 
 function App() {
   const [select, setSelect] = useState([]);
-  let remainingHours = parseInt(document.getElementById('remainingHour'));
-  let totalHours = parseInt(document.getElementById('totalHour'));
-  let totalPrice = parseInt(document.getElementById('totalPrice'));
+  const [remainingCredit, setRemainingCredit] = useState(20);
+  const [totalCredit, setTotalCredit] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   const handleSelectCourse = (item) => {
+    
     if(select.includes(item)){
       return (alert('Its Item Already Selected'))
     }
-    else if (remainingHours < 0 || totalHours > 20){
-      return (alert('You Have No Remaining Hours'))
-    }
     else{
       const newSelectedCourse = [...select, item];
+      let newRemainingCredit = remainingCredit - item.credit;
+      let newTotalCredit = totalCredit + item.credit;
+      let newTotalPrice = totalPrice + item.price;
+      if(newRemainingCredit < 0 || newTotalCredit > 20){
+        return (alert('You Have No space to remaining credit'))
+      }
       setSelect(newSelectedCourse);
-      remainingHours.innerText = parseInt(remainingHours) - 1;
+      setRemainingCredit(newRemainingCredit);
+      setTotalCredit(newTotalCredit );
+      setTotalPrice(newTotalPrice);
       
     }
     
   }
+
+
+  
   return (
     < >
     <h1 className='text-4xl my-10 text-center font-bold'>Course Registration</h1>
       <div className='xl:flex w-11/12 mx-auto gap-5'>
         <Course handleSelect={handleSelectCourse}></Course>
-        <Selected course={select}></Selected>
+        <Selected course={select} remainingCredit={remainingCredit} totalCredit={totalCredit} totalPrice={totalPrice}></Selected>
       </div>
     </>
   )
