@@ -6,21 +6,16 @@ import { IoBookOutline } from "react-icons/io5";
 const CourseItem = ({course, handleSelectCourse}) => {
     const {image, course_name, course_details, price, credit} = course;
     return (
-        <div>
-            <div>
-                <img src={image} alt={course_name} />
+        <div className='bg-white p-4 rounded-md flex flex-col gap-3'>
+                <img className='w-full rounded-md h-56' src={image} alt={course_name} />
+                <h2 className='font-semibold text-lg'>{course_name}</h2>
+                <p className='text-gray-500 h-24'>{course_details}</p>
+            
+            <div className='flex justify-between mb-3'>
+                <p className='text-md text-black flex items-center'> <IoLogoUsd className='mr-2 text-2xl' /> Price: <span id='price' className='ms-2'>{price}</span> </p>
+                <p className='text-md text-black flex items-center'> <IoBookOutline className='mr-2 text-2xl' /> Credit:<span id='creditHour' className='ms-2'>{credit}</span> hr</p>
             </div>
-            <div>
-                <h2>{course_name}</h2>
-                <p>{course_details}</p>
-            </div>
-            <div>
-                <p> <span><IoLogoUsd /></span> Price: {price}</p>
-                <p> <span><IoBookOutline /></span> Credit: {credit}</p>
-            </div>
-            <div>
-                <button onClick={()=> handleSelectCourse(course)}>Select</button>
-            </div>
+            <button className='btn tracking-widest rounded-md bg-blue-500 font-semibold text-white py-2' onClick={()=> handleSelectCourse(course)}>Select</button>
         </div>
     );
 };
